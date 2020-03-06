@@ -41,3 +41,13 @@ S2(config-vlan)# name MAnzana9
 S2(config-vlan)# vlan 11
 S2(config-vlan)# name Manzana10
 S2(config-vlan)# end
+
+Asignar la PC a la Vlan
+S1(config)# interface f0/6
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 10
+S1(config)# interface vlan 1
+S1(config-if)# no ip address
+S1(config-if)# interface vlan 99
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
