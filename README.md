@@ -32,3 +32,14 @@ S2(config-vlan)# vlan 99
 S2(config-vlan)# name Administración
 S2(config-vlan)# end
 
+ S2(config)# vlan 7
+S2(config-vlan)# name Manzana4
+S2(config-vlan)# vlan 8
+S2(config-vlan)# name Manzana5
+S2(config-vlan)# vlan 9
+S2(config-vlan)# name Manzana8
+S2(config)# vlan 10
+S2(config-vlan)# name MAnzana9
+S2(config-vlan)# vlan 11
+S2(config-vlan)# name Manzana10
+S2(config-vlan)# end
