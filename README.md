@@ -51,3 +51,46 @@ S1(config-if)# no ip address
 S1(config-if)# interface vlan 99
 S1(config-if)# ip address 192.168.1.11 255.255.255.0
 S1(config-if)# end
+
+## _ _Asigne la PC a la VLAN
+S1(config)# interface f0/6
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 2
+
+S1(config)# interface f0/7
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 3
+
+S1(config)# interface f0/8
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 4
+
+S1(config)# interface f0/9
+S1(config-if)# switchport mode access
+S1(config-if)# switchport access vlan 5
+
+
+## _ _Transfiera la dirección IP del switch a la VLAN 99
+S1(config)# interface vlan 1
+S1(config-if)# no ip address
+S1(config-if)# interface vlan 2
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
+
+S1(config)# interface vlan 1
+S1(config-if)# no ip address
+S1(config-if)# interface vlan 3
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
+
+S1(config)# interface vlan 1
+S1(config-if)# no ip address
+S1(config-if)# interface vlan 4
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
+
+S1(config)# interface vlan 1
+S1(config-if)# no ip address
+S1(config-if)# interface vlan 5
+S1(config-if)# ip address 192.168.1.11 255.255.255.0
+S1(config-if)# end
