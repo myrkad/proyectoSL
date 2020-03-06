@@ -1,5 +1,6 @@
 # proyectoSL
 Trabajo del diseño de redes y creación de vlans
+Ingresar al switch en configuracion global
 no ip domain-lookup
 service password-encryption
 enable secret class
@@ -15,12 +16,17 @@ logging synchronous
 login
 exit
 
-S1(config)# vlan 10
-S1(config-vlan)# name Estudiantes
-S1(config-vlan)# vlan 20
-S1(config-vlan)# name Docentes
-S1(config-vlan)# vlan 99
-S1(config-vlan)# name Administración
+Creacion de VLANS para la Urbanizacion Vista del Sol tomando de referencia el SWITCH2
+S1(config)# vlan 2
+S1(config-vlan)# name Manzana1
+S1(config-vlan)# vlan 3
+S1(config-vlan)# name Manzana2
+S1(config-vlan)# vlan 4
+S1(config-vlan)# name Manzana3
+S1(config-vlan)# vlan 5
+S1(config-vlan)# name Manzana6
+S1(config-vlan)# vlan 6
+S1(config-vlan)# name Manzana7
 S1(config-vlan)# end
 
 Creacion de VLANS para la Urbanizacion Vista del Sol tomando de referencia el SWITCH2
