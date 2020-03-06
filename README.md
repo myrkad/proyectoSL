@@ -22,4 +22,13 @@ S1(config-vlan)# name Docentes
 S1(config-vlan)# vlan 99
 S1(config-vlan)# name Administración
 S1(config-vlan)# end
+
 Creacion de VLANS para la Urbanizacion Vista del Sol tomando de referencia el SWITCH2
+S2(config)# vlan 10
+S2(config-vlan)# name Estudiantes
+S2(config-vlan)# vlan 20
+S2(config-vlan)# name Docentes
+S2(config-vlan)# vlan 99
+S2(config-vlan)# name Administración
+S2(config-vlan)# end
+
