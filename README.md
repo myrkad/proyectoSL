@@ -15,3 +15,10 @@ logging synchronous
 login
 exit
 
+S1(config)# vlan 10
+S1(config-vlan)# name Estudiantes
+S1(config-vlan)# vlan 20
+S1(config-vlan)# name Docentes
+S1(config-vlan)# vlan 99
+S1(config-vlan)# name Administración
+S1(config-vlan)# end
